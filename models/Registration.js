@@ -15,12 +15,18 @@ const registrationSchema = new mongoose.Schema({
   phone: String,
   country: String,
   state: String,
-  modeOfParticipation: {
+  seatReservations: Number,
+  courseOfInterest: String,
+  selectedSession: {
     type: String,
     enum: PARTICIPATION_MODES,
-    default: 'Physical'
+    default: 'Morning'
   },
-  seatNumber: Number
+  createdAt: {
+    type: Date,
+    default: Date.now
+  }
+
 });
 
 module.exports = mongoose.model('Registration', registrationSchema);
