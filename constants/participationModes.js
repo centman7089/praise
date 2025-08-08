@@ -1,3 +1,3 @@
-const PARTICIPATION_MODES = ['Morning', 'Evening'];
+const PARTICIPATION_MODES = ['Physical', 'Virtual'];
 
 module.exports = PARTICIPATION_MODES;
